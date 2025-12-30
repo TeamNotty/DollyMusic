@@ -1,5 +1,5 @@
 # =======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 🚀
+# ©️ 2025-26 All Rights Reserved by Notty Bots (Im-Notcoder) 🚀
 
 # This source code is under MIT License 📜 Unauthorized forking, importing, or using this code without giving proper credit will result in legal action ⚠️
  
@@ -92,8 +92,8 @@ async def get_thumb(videoid):
         bold_font = ImageFont.truetype("DOLLY/assets/font.ttf", 33)
 
     
-        text_size = draw.textsize("@PurviBots   ", font=font)
-        draw.text((1280 - text_size[0] - 10, 10), "@PurviBots   ", fill="yellow", font=font)
+        text_size = draw.textsize("@NottySpace   ", font=font)
+        draw.text((1280 - text_size[0] - 10, 10), "@NottySpace   ", fill="yellow", font=font)
 
     
         draw.text(
@@ -138,11 +138,4 @@ async def get_thumb(videoid):
         return YOUTUBE_IMG_URL
 
 
-# ======================================================
-# ©️ 2025-26 All Rights Reserved by Purvi Bots (Im-Notcoder) 😎
 
-# 🧑‍💻 Developer : t.me/INNOCENT_FUCKER
-# 🔗 Source link : GitHub.com/Im-Notcoder/Sonali-MusicV2
-# 📢 Telegram channel : t.me/Purvi_Bots
-# =======================================================
-        
