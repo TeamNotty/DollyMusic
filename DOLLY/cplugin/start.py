@@ -9,11 +9,11 @@ from PROMUSIC import app
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 import config
 # from PROMUSIC import app
-from PROMUSIC.misc import _boot_
-from PROMUSIC.plugins.sudo.sudoers import sudoers_list
-from PROMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
-from PROMUSIC.utils import bot_sys_stats
-from PROMUSIC.utils.database import (
+from DOLLY.misc import _boot_
+from DOLLY.plugins.sudo.sudoers import sudoers_list
+from DOLLY.utils.database import get_served_chats, get_served_users, get_sudoers
+from DOLLY.utils import bot_sys_stats
+from DOLLY.utils.database import (
     add_served_chat_clone,
     add_served_user_clone,
     blacklisted_chats,
@@ -21,13 +21,13 @@ from PROMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from PROMUSIC.utils.decorators.language import LanguageStart
-from PROMUSIC.utils.formatters import get_readable_time
-from PROMUSIC.utils.inline import help_pannel, private_panel, start_panel
+from DOLLY.utils.decorators.language import LanguageStart
+from DOLLY.utils.formatters import get_readable_time
+from DOLLY.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS, OWNER_ID
 from strings import get_string
 
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 #--------------------------
 
@@ -181,3 +181,4 @@ async def start_gp(client, message: Message, _):
     # return await add_served_chat_clone(message.chat.id)
     bot_id = a.id
     return await add_served_chat_clone(message.chat.id, bot_id)
+
