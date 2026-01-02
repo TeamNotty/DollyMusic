@@ -3,18 +3,18 @@ from typing import Union
 from pyrogram import filters, types, Client
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from PROMUSIC import app
-from PROMUSIC.utils import first_page, second_page
-from PROMUSIC.utils.database import get_lang
-from PROMUSIC.utils.decorators.language import LanguageStart, languageCB
-from PROMUSIC.utils.inline.help import help_back_markup, private_help_panel
+from DOLLY import app
+from DOLLY.utils import first_page, second_page
+from DOLLY.utils.database import get_lang
+from DOLLY.utils.decorators.language import LanguageStart, languageCB
+from DOLLY import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
-from PROMUSIC.misc import SUDOERS
+from DOLLY.misc import SUDOERS
 from time import time
 import asyncio
-from PROMUSIC.utils.extraction import extract_user
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from DOLLY.utils.extraction import extract_user
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -171,3 +171,4 @@ async def first_pagexx(client, CallbackQuery, _):
         return
     except:
         return
+
