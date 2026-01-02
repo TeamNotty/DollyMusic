@@ -5,11 +5,11 @@ import psutil
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from PROMUSIC import app
+from DOLLY import app
 from config import PING_IMG_URL
 from .utils import StartTime
-from PROMUSIC.utils import get_readable_time
-from PROMUSIC.utils.decorators.language import language
+from DOLLY.utils import get_readable_time
+from DOLLY.utils.decorators.language import language
 
 APP_LINK = f"https://t.me/{app.username}"
 
@@ -28,3 +28,4 @@ async def ping_clone(client: Client, message: Message, _):
             ]
         )
     )
+
