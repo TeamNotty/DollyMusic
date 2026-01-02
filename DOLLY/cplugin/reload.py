@@ -12,12 +12,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from PROMUSIC import app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import db
-from PROMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
-from PROMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
-from PROMUSIC.utils.formatters import alpha_to_int, get_readable_time
+from DOLLY import app
+from DOLLY.core.call import NOTTY
+from DOLLY.misc import db
+from DOLLY.utils.database import get_assistant, get_authuser_names, get_cmode
+from DOLLY.utils.decorators import ActualAdminCB, AdminActual, language
+from DOLLY.utils.formatters import alpha_to_int, get_readable_time
 # from PROMUSIC.mongo.afkdb import LOGGERS
 from config import BANNED_USERS, adminlist, lyrical
 
@@ -141,3 +141,4 @@ async def stop_download(client, CallbackQuery: CallbackQuery, _):
         except:
             return await CallbackQuery.answer(_["tg_8"], show_alert=True)
     await CallbackQuery.answer(_["tg_9"], show_alert=True)
+
