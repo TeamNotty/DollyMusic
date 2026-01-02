@@ -5,25 +5,25 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-from PROMUSIC.utils.database import get_assistant
+from DOLLY.utils.database import get_assistant
 import config
 from PROMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import SUDOERS
-from PROMUSIC.utils.inline import panel_markup_clone
-from PROMUSIC.utils import seconds_to_min, time_to_seconds
-from PROMUSIC.utils.channelplay import get_channeplayCB
-from PROMUSIC.utils.decorators.language import languageCB
-from PROMUSIC.utils.decorators.play import CPlayWrapper
-from PROMUSIC.utils.formatters import formats
-from PROMUSIC.utils.inline import (
+from DOLLY.core.call import NOTTY
+from DOLLY.misc import SUDOERS
+from DOLLY.utils.inline import panel_markup_clone
+from DOLLY.utils import seconds_to_min, time_to_seconds
+from DOLLY.utils.channelplay import get_channeplayCB
+from DOLLY.utils.decorators.language import languageCB
+from DOLLY.utils.decorators.play import CPlayWrapper
+from DOLLY.utils.formatters import formats
+from DOLLY.utils.inline import (
     botplaylist_markup,
     livestream_markup,
     playlist_markup,
     slider_markup,
     track_markup,
 )
-from PROMUSIC.utils.database import (
+from DOLLY.utils.database import (
     add_served_chat_clone,
     add_served_user_clone,
     blacklisted_chats,
@@ -31,10 +31,10 @@ from PROMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from PROMUSIC.utils.logger import play_logs
+from DOLLY.utils.logger import play_logs
 from config import BANNED_USERS, lyrical
 from time import time
-from PROMUSIC.utils.extraction import extract_user
+from DOLLY.utils.extraction import extract_user
 
 # Define a dictionary to track the last message timestamp for each user
 user_last_message_time = {}
@@ -1228,3 +1228,4 @@ async def get_thumb(videoid):
         return thumbnail
     except Exception as e:
         return config.YOUTUBE_IMG_URL
+
