@@ -1,10 +1,10 @@
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, Message
 
-from PROMUSIC import app
-from PROMUSIC.utils.database import get_playmode, get_playtype, is_nonadmin_chat
-from PROMUSIC.utils.decorators import language
-from PROMUSIC.utils.inline.settings import playmode_users_markup
+from DOLLY import app
+from DOLLY.utils.database import get_playmode, get_playtype, is_nonadmin_chat
+from DOLLY.utils.decorators import language
+from DOLLY.utils.inline.settings import playmode_users_markup
 from config import BANNED_USERS
 
 
@@ -37,3 +37,4 @@ async def playmode_(client, message: Message, _):
         _["play_22"].format(message.chat.title),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
+
