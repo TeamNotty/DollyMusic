@@ -1,11 +1,11 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PROMUSIC import YouTube, app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import db
-from PROMUSIC.utils import AdminRightsCheck, seconds_to_min
-from PROMUSIC.utils.inline import close_markup
+from DOLLY import YouTube, app
+from DOLLY.core.call import NOTTY
+from DOLLY.misc import db
+from DOLLY.utils import AdminRightsCheck, seconds_to_min
+from DOLLY.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -73,3 +73,4 @@ async def seek_comm(cli, message: Message, _, chat_id):
         text=_["admin_25"].format(seconds_to_min(to_seek), message.from_user.mention),
         reply_markup=close_markup(_),
     )
+
