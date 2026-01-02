@@ -3,10 +3,10 @@ import random
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PROMUSIC import app
-from PROMUSIC.misc import db
-from PROMUSIC.utils.decorators import AdminRightsCheck
-from PROMUSIC.utils.inline import close_markup
+from DOLLY import app
+from DOLLY.misc import db
+from DOLLY.utils.decorators import AdminRightsCheck
+from DOLLY.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -31,3 +31,4 @@ async def admins(Client, message: Message, _, chat_id):
     await message.reply_text(
         _["admin_16"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
+
