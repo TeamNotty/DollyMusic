@@ -1,11 +1,11 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PROMUSIC import app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.utils.database import set_loop
-from PROMUSIC.utils.decorators import AdminRightsCheck
-from PROMUSIC.utils.inline import close_markup
+from DOLLY import app
+from DOLLY.core.call import NOTTY
+from DOLLY.utils.database import set_loop
+from DOLLY.utils.decorators import AdminRightsCheck
+from DOLLY.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -26,3 +26,4 @@ async def stop_music(cli, message: Message, _, chat_id):
     await message.reply_text(
         _["admin_5"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
+
