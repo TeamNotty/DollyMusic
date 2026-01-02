@@ -5,8 +5,8 @@ from pyrogram.types import (
 )
 from youtubesearchpython.__future__ import VideosSearch
 from pyrogram import filters, Client
-from PROMUSIC import app
-from PROMUSIC.utils.inlinequery import answer
+from DOLLY import app
+from DOLLY.utils.inlinequery import answer
 from config import BANNED_USERS
 
 
@@ -67,3 +67,4 @@ async def inline_query_handler(client, query):
             return await client.answer_inline_query(query.id, results=answers)
         except:
             return
+
