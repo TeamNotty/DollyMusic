@@ -10,7 +10,7 @@ from pyrogram.errors.exceptions.bad_request_400 import (
     AccessTokenExpired,
     AccessTokenInvalid,
 )
-from PROMUSIC.utils.database import get_assistant
+from DOLLY.utils.database import get_assistant
 from config import API_ID, API_HASH
 from DOLLY import app
 from config import OWNER_ID
