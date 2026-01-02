@@ -4,22 +4,22 @@ from pyrogram import filters, Client
 from pyrogram.enums import ChatMembersFilter
 from pyrogram.errors import FloodWait
 
-from PROMUSIC import app
-from PROMUSIC.misc import SUDOERS
-from PROMUSIC.utils.database import (
+from DOLLY import app
+from DOLLY.misc import SUDOERS
+from DOLLY.utils.database import (
     get_client,
     get_served_chats_clone,
     get_served_users_clone,
 )
-from PROMUSIC.utils.decorators.language import language
-from PROMUSIC.utils.formatters import alpha_to_int
+from DOLLY.utils.decorators.language import language
+from DOLLY.utils.formatters import alpha_to_int
 from config import adminlist
 import random
 from typing import Dict, List, Union
 
-from PROMUSIC import userbot
-from PROMUSIC.core.mongo import mongodb, pymongodb
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, check_bot_premium
+from DOLLY import userbot
+from DOLLY.core.mongo import mongodb, pymongodb
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, check_bot_premium
 from config import SUPPORT_CHAT, OWNER_ID
 
 authdb = mongodb.adminauth
@@ -261,3 +261,4 @@ async def broadcast_message(client, message, _):
             pass
 
     IS_BROADCASTING = False
+
