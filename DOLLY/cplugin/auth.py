@@ -1,16 +1,16 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PROMUSIC import app
-from PROMUSIC.utils import extract_user, int_to_alpha
-from PROMUSIC.utils.database import (
+from DOLLY import app
+from DOLLY.utils import extract_user, int_to_alpha
+from DOLLY.utils.database import (
     delete_authuser,
     get_authuser,
     get_authuser_names,
     save_authuser,
 )
-from PROMUSIC.utils.decorators import AdminActual, language
-from PROMUSIC.utils.inline import close_markup
+from DOLLY.utils.decorators import AdminActual, language
+from DOLLY.utils.inline import close_markup
 from config import BANNED_USERS, adminlist
 
 
@@ -87,3 +87,4 @@ async def authusers(client, message: Message, _):
             text += f"{j}➤ {user}[<code>{user_id}</code>]\n"
             text += f"   {_['auth_8']} {admin_name}[<code>{admin_id}</code>]\n\n"
         await mystic.edit_text(text, reply_markup=close_markup(_))
+
