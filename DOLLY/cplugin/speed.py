@@ -1,13 +1,13 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message
 
-from PROMUSIC import app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import SUDOERS, db
-from PROMUSIC.utils import AdminRightsCheck
-from PROMUSIC.utils.database import is_active_chat, is_nonadmin_chat
-from PROMUSIC.utils.decorators.language import languageCB
-from PROMUSIC.utils.inline import close_markup, speed_markup
+from DOLLY import app
+from DOLLY.core.call import NOTTY
+from DOLLY.misc import SUDOERS, db
+from DOLLY.utils import AdminRightsCheck
+from DOLLY.utils.database import is_active_chat, is_nonadmin_chat
+from DOLLY.utils.decorators.language import languageCB
+from DOLLY.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
@@ -107,3 +107,4 @@ async def del_back_playlist(client, callback_query, _):
         text=_["admin_34"].format(speed, callback_query.from_user.mention),
         reply_markup=close_markup(_),
     )
+
