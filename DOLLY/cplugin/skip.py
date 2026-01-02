@@ -2,16 +2,16 @@ from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from PROMUSIC import YouTube, app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import db
-from PROMUSIC.utils.database import get_loop
-from PROMUSIC.utils.decorators import AdminRightsCheck
-from PROMUSIC.utils.inline import close_markup, stream_markup, stream_markup2
-from PROMUSIC.utils.stream.autoclear import auto_clean
-from PROMUSIC.utils.thumbnails import get_thumb
+from DOLLY import YouTube, app
+from DOLLY.core.call import NOTTY
+from DOLLY.misc import db
+from DOLLY.utils.database import get_loop
+from DOLLY.utils.decorators import AdminRightsCheck
+from DOLLY.utils.inline import close_markup, stream_markup, stream_markup2
+from DOLLY.utils.stream.autoclear import auto_clean
+from DOLLY.utils.thumbnails import get_thumb
 from config import BANNED_USERS
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 
 @Client.on_message(
@@ -249,3 +249,4 @@ async def skip(cli, message: Message, _, chat_id):
             )
             db[chat_id][0]["mystic"] = run
             db[chat_id][0]["markup"] = "stream"
+
