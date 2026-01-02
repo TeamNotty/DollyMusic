@@ -8,13 +8,13 @@ from pyrogram.errors import (
     UserNotParticipant,
 )
 import config
-from PROMUSIC.utils.database import get_assistant
+from DOLLY.utils.database import get_assistant
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
-from PROMUSIC import YouTube, app
-from PROMUSIC.core.call import PRO
-from PROMUSIC.misc import SUDOERS, db
-from PROMUSIC.utils.database import (
+from DOLLY import YouTube, app
+from DOLLY.core.call import PRO
+from DOLLY.misc import SUDOERS, db
+from DOLLY.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -28,9 +28,9 @@ from PROMUSIC.utils.database import (
     is_muted,
     set_loop,
 )
-from PROMUSIC.utils.decorators.language import languageCB
-from PROMUSIC.utils.formatters import seconds_to_min
-from PROMUSIC.utils.inline import (
+from DOLLY.utils.decorators.language import languageCB
+from DOLLY.utils.formatters import seconds_to_min
+from DOLLY.utils.inline import (
     close_markup,
     stream_markup,
     stream_markup_timer,
@@ -52,8 +52,8 @@ from PROMUSIC.utils.inline import (
     queue_markup,
     panel_markup_1,
 )
-from PROMUSIC.utils.stream.autoclear import auto_clean
-from PROMUSIC.utils.thumbnails import get_thumb
+from DOLLY.utils.stream.autoclear import auto_clean
+from DOLLY.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -66,7 +66,7 @@ from config import (
 )
 from strings import get_string
 from config import lyrical
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel
 
 wrong = {}
 
@@ -723,3 +723,4 @@ async def markup_timer():
 
 
 asyncio.create_task(markup_timer())
+
