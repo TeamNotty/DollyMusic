@@ -12,7 +12,7 @@ from DOLLY.utils.database import get_assistant
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from DOLLY import YouTube, app
-from DOLLY.core.call import PRO
+from DOLLY.core.call import NOTTY
 from DOLLY.misc import SUDOERS, db
 from DOLLY.utils.database import (
     get_active_chats,
@@ -723,4 +723,5 @@ async def markup_timer():
 
 
 asyncio.create_task(markup_timer())
+
 
