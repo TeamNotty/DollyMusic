@@ -1,7 +1,7 @@
 import random
 from typing import Dict, List, Union
 
-from PROMUSIC import userbot
+from DOLLY import userbot
 from DOLLY.core.mongo import mongodb, pymongodb
 
 authdb = mongodb.adminauth
