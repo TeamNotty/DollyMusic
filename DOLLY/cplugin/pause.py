@@ -1,7 +1,7 @@
 from pyrogram import filters, Client
 from pyrogram.types import Message, InlineKeyboardMarkup, InlineKeyboardButton
 from DOLLY import app
-from DOLLY.core.call import PRO
+from DOLLY.core.call import NOTTY
 from DOLLY.utils.decorators import AdminRightsCheck
 from DOLLY.utils.inline import close_markup
 from config import BANNED_USERS
@@ -96,4 +96,5 @@ async def pause_admin(cli, message: Message, _, chat_id):
         _["admin_2"].format(message.from_user.mention),
         reply_markup=InlineKeyboardMarkup(buttons),
     )
+
 
