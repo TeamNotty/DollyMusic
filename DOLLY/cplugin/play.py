@@ -857,7 +857,7 @@ async def stream(
                 position = len(db.get(chat_id)) - 1
                 count += 1
                 msg += f"{count}. {title[:70]}\n"
-                msg += f"{_["play_20"]} {position}\n\n"
+                msg += f"{_['play_20']} {position}\n\n"
             else:
                 if not forceplay:
                     db[chat_id] = []
