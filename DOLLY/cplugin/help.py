@@ -7,7 +7,7 @@ from DOLLY import app
 from DOLLY.utils import first_page, second_page
 from DOLLY.utils.database import get_lang
 from DOLLY.utils.decorators.language import LanguageStart, languageCB
-from DOLLY import help_back_markup, private_help_panel
+from DOLLY.utils.inline.help import help_back_markup, private_help_panel
 from config import BANNED_USERS, START_IMG_URL, SUPPORT_CHAT
 from strings import get_string, helpers
 from DOLLY.misc import SUDOERS
@@ -171,4 +171,5 @@ async def first_pagexx(client, CallbackQuery, _):
         return
     except:
         return
+
 
