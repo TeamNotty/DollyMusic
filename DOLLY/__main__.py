@@ -10,6 +10,8 @@ from DOLLY.misc import sudo
 from DOLLY.plugins import ALL_MODULES
 from DOLLY.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
+from DOLLY.plugins.tools.clone import restart_bots
+
 
 
 async def init():
@@ -41,6 +43,7 @@ async def init():
     await userbot.start()
     await NOTTY.start()
     await NOTTY.decorators()
+    await restart_bots()
     LOGGER("DOLLY").info("╔═════ஜ۩۞۩ஜ════╗\n  ♨️𝗠𝗔𝗗𝗘 𝗕𝗬 𝗔𝗟𝗣𝗛𝗔♨️\n╚═════ஜ۩۞۩ஜ════╝")
     await idle()
     await app.stop()
