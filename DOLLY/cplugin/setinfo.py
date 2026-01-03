@@ -134,3 +134,4 @@ async def bot_info(client: Client, message: Message, _):
         f"➤ **Bᴏᴛ Sᴛᴀᴛᴜs:** {bot_status}"
     )
 
+
