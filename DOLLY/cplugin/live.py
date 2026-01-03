@@ -3,7 +3,7 @@ import os
 from DOLLY import YouTube, app
 from DOLLY.utils.channelplay import get_channeplayCB
 from DOLLY.utils.decorators.language import languageCB
-from DOLLY import stream
+from DOLLY.utils.stream.stream import stream
 from config import BANNED_USERS
 
 
@@ -59,4 +59,5 @@ async def play_live_stream(client, CallbackQuery, _):
     else:
         return await mystic.edit_text("» ɴᴏᴛ ᴀ ʟɪᴠᴇ sᴛʀᴇᴀᴍ.")
     await mystic.delete()
+
 
