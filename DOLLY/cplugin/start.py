@@ -4,7 +4,7 @@ from pyrogram import filters, Client
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 from youtubesearchpython.__future__ import VideosSearch
-from PROMUSIC import app
+from DOLLY import app
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 import config
@@ -181,4 +181,5 @@ async def start_gp(client, message: Message, _):
     # return await add_served_chat_clone(message.chat.id)
     bot_id = a.id
     return await add_served_chat_clone(message.chat.id, bot_id)
+
 
