@@ -5,7 +5,7 @@ import asyncio
 from pyrogram import Client, filters
 from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
-from NOTTYMUSIC.utils.database import get_assistant
+from DOLLY.utils.database import get_assistant
 import config
 from DOLLY import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from DOLLY.core.call import NOTTY
