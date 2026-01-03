@@ -7,7 +7,7 @@ from pyrogram.types import InlineKeyboardMarkup, InputMediaPhoto, Message
 from pytgcalls.exceptions import NoActiveGroupCall
 from DOLLY.utils.database import get_assistant
 import config
-from PROMUSIC import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
+from DOLLY import Apple, Resso, SoundCloud, Spotify, Telegram, YouTube, app
 from DOLLY.core.call import NOTTY
 from DOLLY.misc import SUDOERS
 from DOLLY.utils.inline import panel_markup_clone
@@ -1228,4 +1228,5 @@ async def get_thumb(videoid):
         return thumbnail
     except Exception as e:
         return config.YOUTUBE_IMG_URL
+
 
