@@ -6,7 +6,7 @@ from DOLLY import app
 from DOLLY.misc import SUDOERS
 from DOLLY.utils.decorators.language import language
 
-from PROMUSIC.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel, check_bot_premium
+from DOLLY.utils.database.clonedb import get_owner_id_from_db, get_cloned_support_chat, get_cloned_support_channel, check_bot_premium
 from config import SUPPORT_CHAT, OWNER_ID
 
 from DOLLY.utils.database import clonebotdb
@@ -133,5 +133,6 @@ async def bot_info(client: Client, message: Message, _):
         f"➤ **Sᴜᴘᴘᴏʀᴛ Cʜᴀᴛ:** @{support}\n"
         f"➤ **Bᴏᴛ Sᴛᴀᴛᴜs:** {bot_status}"
     )
+
 
 
